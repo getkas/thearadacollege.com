@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/app2/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The WebSite</title>
+    <link rel="stylesheet" href="./The WebSite_files/sty.css">
+    <link rel="stylesheet" href="./The WebSite_files/font-awesome.min.css"></head><body>&gt;
+
+
+  <section class="header">
+    <nav>
+       <a href="http://127.0.0.1:5500/app2/index.html"><img src="./The WebSite_files/logo.png"></a>
+       <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/app2/index.html">Home</a></li>
+          <li><a href="http://127.0.0.1:5500/app2/index.html">About</a></li>
+          <li><a href="http://127.0.0.1:5500/app2/index.html">Blog</a></li>
+          <li><a href="http://127.0.0.1:5500/app2/index.html">Contact</a></li>
+        </ul>
+
+       </div>
+       <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1> The College     </h1>
+      <p> The cllege is ...</p>
+      <a href="http://127.0.0.1:5500/app2/index.html" class="hero-btn">Visit Us</a>
+    </div>
+
+  </section>
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>The courses ...</p>
+    <div class="row">
+       <div class="course-col">
+        <h3>Level 4</h3>
+        <p>The level 4 courses are ...</p>
+
+       </div>
+       <div class="course-col">
+        <h3>Level 3</h3>
+        <p>The level 3 courses are ...</p>
+
+       </div>
+       <div class="course-col">
+        <h3>Level 2</h3>
+        <p>The level 2 courses are ...</p>
+
+       </div>
+      </div>
+
+  </section>
+<section class="campus">
+  <h1>Our Campuses</h1>
+  <p>There is another campus ...</p>
+   <div class="row">
+    
+    <div class="campus-col">
+        <img src="./The WebSite_files/washington.png">
+       
+        <div class="layer">
+          <h3>Piaza Campus</h3>
+        </div>
+
+    </div>
+    <div class="campus-col">
+      <img src="./The WebSite_files/london.png">
+     
+      <div class="layer">
+        <h3>Aware Campus</h3>
+      </div>
+
+  </div>
+  <div class="campus-col">
+    <img src="./The WebSite_files/newyork.png">
+   
+    <div class="layer">
+      <h3>Main Campus</h3>
+    </div>
+
+</div>
+
+   </div>
+
+</section>
+
+<section class="fascilities">
+  <h1>Our Fascilities</h1>
+  <p>There fascilities include ...</p>
+   <div class="row">
+    
+    <div class="fascilities-col">
+        <img src="./The WebSite_files/library.png">
+       
+        <div class="layers">
+          <h3>Library</h3>
+        </div>
+
+    </div>
+    <div class="fascilities-col">
+      <img src="./The WebSite_files/basketball.png">
+     
+      <div class="layers">
+        <h3>Basket ball</h3>
+      </div>
+
+  </div>
+  <div class="fascilities-col">
+    <img src="./The WebSite_files/cafeteria.png">
+   
+    <div class="layers">
+      <h3>Cafe</h3>
+    </div>
+
+</div>
+
+   </div>
+   <section>
+    <section class="testimonials">
+      <h1>Our Testimonials</h1>
+      <p>The testimonials include ...</p>
+       <div class="row">
+        
+        <div class="testimonials-col">
+            <img src="./The WebSite_files/user1.jpg">
+           
+            <div class="layers">
+              <h3>Sara</h3>
+              <p>There fascilities include ...</p>
+            </div>
+    
+        </div>
+        <div class="testimonials-col">
+          <img src="./The WebSite_files/user2.jpg">
+         
+          <div class="layers">
+            <h3>Beki</h3>
+            <p>There fascilities include ...</p>
+          </div>
+    
+      </div>
+
+
+
+
+
+   </div></section>
+
+</section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+              }
+      function hideMenu(){
+        navLinks.style.right = "-200";
+        
+      }
+    </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</section></body></html>
